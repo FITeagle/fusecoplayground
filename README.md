@@ -1,4 +1,4 @@
-fusecoplayground
-================
+Testbed: FUSECO Playground
+==========================
 
-Testbed: Documentation of the FUSCEO Playground
+This is the documentation of the FITeagle client testbed FUSECO Playground.
