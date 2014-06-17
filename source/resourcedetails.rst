@@ -6,8 +6,8 @@ Femto Cells
 	
 The Base Stations we use are commercial off-the-shelf elements. Usually they support basic functionality.
 
-ip.access nanoBTS (DCS 1800):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ip.access nanoBTS (DCS 1800)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Frequency range 1710-1785MHz , 1805-1880MHz , Maximum o/p power +23dBm, +13dBm (8PSK)
 supports the ip.access "A-bis over IP Interface"
