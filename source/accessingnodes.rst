@@ -15,7 +15,7 @@ Software Installation
 =====================
 
 Conceptionally, it should be possible to request resources using any SFA compliant tool.
-For this document, we've chosen the `jFed Experimenter Tool <http://jfed.iminds.be>`_ and assume that you've
+For this document, we've chosen the `jFed Experimenter Tool <http://jfed.iminds.be>`_ (Probe version 4, Documentation tested with release 1388) and assume that you've
 installed the binary and started it for example via command line::
 
    java -jar jFed-experimenter-GUI.jar
