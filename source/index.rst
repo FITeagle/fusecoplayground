@@ -20,6 +20,7 @@ Then, different other access technologies are being described (such as
 
    fusecofacility
    account
+   resourcedetails
    urnsrspecs
    accessingnodes
    tipsandtricks
