@@ -65,6 +65,14 @@ Network Interfaces S1 over IP
 Electrical Supply 12V @ 5.5A from external power brick
 
 
+WiFi APs
+--------
+
+Support 802.11 a/b/g/n/ac 2,4 GHz and 5 GHz in parallel
+
+HW: Cisco Aironet 3602e
+
+
 Radio	Signal Attenuation	System
 --------------------------------
 
@@ -86,5 +94,52 @@ Size inside 340 x 240 x 160 mm;
 Antenna Coupler with frequency range 700MHz – 2.7GHz
 
 
+FUSECO Clients
+--------------
+
+Supporting multiple operating systems as well as connectivity to different radio access technologies.
+
+HW: LENOVO ThinkCentre M93 Tiny: Intel Core i5-4570T (2.90 GHz, 4 MB Cache), 1x4 GB PC3-12800 DDR3, 500 GB -7200, Grafik Intel 4600
+
+OpenIMS Client:
+^^^^^^^^^^^^^^^
+
+`myMONSTER <http://www.monster-the-client.org/index.html>`_ (Multimedia Open InterNet Services and Telecommunication EnviRonment) is an extendible plug-and-play framework developed by Fraunhofer FOKUS. 
+This toolkit enables the creation of rich terminal applications compliant to NGN and WEB standards.
+
+myMONSTER provides two toolkits for telecommunication service on the mobile and fixed platform. 
+For development on mobile devices, we offer the myMONSTER Rich Communication Suite (myMONSTER RCS) and for desktop/laptops/fixed platforms we offer the myMONSTER Telco Communication Suite (myMONSTER TCS).
+
+OpenEPC Client:
+^^^^^^^^^^^^^^^
+
+TBD
 
 
+OpenIMS Core
+------------
+
+TBD
+
+OpenEPC as a Service
+--------------------
+
+TBD
+
+FUSECO Cloud Testbed
+--------------------
+
+Is a cloud testbed based on OpenStack.
+
+* Compute ressource
+	* DELL PE M620 blades
+	* Each blade (PE M620) is equipped with two 6 core CPUs (2,5GHz) and 128GB RAM
+	
+* Storage
+	* NetApp Metro Cluster
+	* Capacity: 10TB fully redundant
+	
+* Network equipment
+	* Cisco router
+	* Cisco swiches 
+	* HP 3800 OpenFlow capable
