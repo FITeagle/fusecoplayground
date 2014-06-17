@@ -37,7 +37,16 @@ see http://fuseco.fokus.fraunhofer.de:8085/doc/account.html
 Configuring jFed
 ----------------
 
-todo:: describe me
+  1. Choose in Default Login type "Load from file" and load the previously created "mycredentials.pem"
+  2. Choose "Edit Testbed Info.." -> "Add New by scanning AM URL..." and type in the following:  
+  
+  .. figure:: ../images/jfed_config_fuseco_am.png
+     :width: 40%
+
+  3. Choose Scan and afterwards "Open scan result as new Authority".
+  3. Close the testbeds info window again and type in your private key password.
+  4. Click on "Login".
+  5. Get Credentials: TODO
 
 Accessing the Openstack via SFA using JFed
 ------------------------------------------
