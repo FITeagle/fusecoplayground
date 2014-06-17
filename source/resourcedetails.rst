@@ -1,0 +1,3 @@
+FUSECO Playground resource details
+==================================
+
