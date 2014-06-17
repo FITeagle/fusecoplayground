@@ -101,7 +101,7 @@ Supporting multiple operating systems as well as connectivity to different radio
 
 HW: LENOVO ThinkCentre M93 Tiny: Intel Core i5-4570T (2.90 GHz, 4 MB Cache), 1x4 GB PC3-12800 DDR3, 500 GB -7200, Grafik Intel 4600
 
-OpenIMS Client:
+OpenIMS Client
 ^^^^^^^^^^^^^^^
 
 `myMONSTER <http://www.monster-the-client.org/index.html>`_ (Multimedia Open InterNet Services and Telecommunication EnviRonment) is an extendible plug-and-play framework developed by Fraunhofer FOKUS. 
@@ -110,7 +110,7 @@ This toolkit enables the creation of rich terminal applications compliant to NGN
 myMONSTER provides two toolkits for telecommunication service on the mobile and fixed platform. 
 For development on mobile devices, we offer the myMONSTER Rich Communication Suite (myMONSTER RCS) and for desktop/laptops/fixed platforms we offer the myMONSTER Telco Communication Suite (myMONSTER TCS).
 
-OpenEPC Client:
+OpenEPC Client
 ^^^^^^^^^^^^^^^
 
 TBD
