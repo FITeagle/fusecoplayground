@@ -1,0 +1,25 @@
+FUSECO Playground resource details
+==================================
+
+Femto cells
+-----------
+
+The Base Stations we use are commercial off-the-shelf elements. Usually they support basic functionality.
+
+ip.access nanoBTS (DCS 1800):
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Frequency range 1710-1785MHz , 1805-1880MHz , Maximum o/p power +23dBm, +13dBm (8PSK)
+supports the ip.access "A-bis over IP Interface"
+supports "typical" GSM BTS operations such as
+measurement pre-processing
+handover
+cell broadcast
+transmission of system information
+transmission and reception of "Full rate" or "Enhanced Full rate" speech traffic
+supports full rate and half rate Advanced Multi-Rate speech codec (AMR) on 165 with SR3 and higher software
+transmission and reception of circuit switched data;
+A5/1, A5/2 or A5/3, or "no encryption" algorithms over the air interface
+interworks with the ip.access nanoBSC product
+stores non volatile parameters in EEPROM
+Supports handover to UMTS cell
