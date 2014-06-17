@@ -26,7 +26,7 @@ Software Configuration
 First, you'll see a login field and we assume that you don't have any credentials yet.
 
 .. figure:: ../images/jfed_started.png
-     :width: 30%
+     :width: 40%
 
 Getting Credentials
 -------------------
