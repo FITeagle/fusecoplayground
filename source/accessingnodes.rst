@@ -44,9 +44,9 @@ Configuring jFed
      :width: 40%
 
   3. Choose Scan and afterwards "Open scan result as new Authority".
-  3. Close the testbeds info window again and type in your private key password.
-  4. Click on "Login".
-  5. Get Credentials: TODO
+  4. Close the testbeds info window again and type in your private key password.
+  5. Click on "Login".
+  6. Get Credentials: todo::
 
 Accessing the Openstack via SFA using JFed
 ------------------------------------------
