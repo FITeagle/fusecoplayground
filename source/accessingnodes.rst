@@ -31,13 +31,7 @@ First, you'll see a login field and we assume that you don't have any credential
 Getting Credentials
 -------------------
 
-In order to get valid user credentials a user needs either a certificate from a trusted
-  federation, such as Fed4FIRE, or from the FUSECO Playground.
-To get credentials from the FUSECO Playground::
-
- 1. Open https://fuseco.fokus.fraunhofer.de     
- 2. Click on Registration
- 3. ...
+see http://fuseco.fokus.fraunhofer.de:8085/doc/account.html
  
  
 Configuring jFed
