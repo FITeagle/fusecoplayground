@@ -40,8 +40,6 @@ Getting an Account
 
 In order to access the FUSECO Playground, a user has currently main two possibilities.
 
-.. contents:: Table of Contents
-
 SSH Credentials
 ---------------
 
