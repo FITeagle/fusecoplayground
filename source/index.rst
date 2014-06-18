@@ -14,8 +14,8 @@ Then, different other access technologies are being described (such as
    :maxdepth: 3
 
    fusecofacility
-   account
    resourcedetails
+   account
    urnsrspecs
    accessingnodes
    tipsandtricks

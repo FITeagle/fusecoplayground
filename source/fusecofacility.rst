@@ -14,19 +14,20 @@ Overview of Resources
 
 The FUSECO Playground consists of the following major components:
 
-•  Virtual	Machines	running	on	OpenStack	
-•  WiFi	APs
-•  LTE	Femto	Cells
-•  3G	Femto	Cells
-•  2G	Femto	Cells
-•  Radio	Signal	Attenuation	System
-•  Radio	Signal	Shield	Box
-•  OpenIMS	Core
-•  OpenIMS	Clients	Linux
-•  OpenIMS	Clients	Android
-•  OpenEPC	as	a	Service
-•  OpenEPC	Clients	Linux
-•  OpenEPC	Clients	Android
-•  Monitoring	Systems
+* Virtual	Machines	running	on	OpenStack	
+* WiFi	APs
+* LTE	Femto	Cells
+* 3G	Femto	Cells
+* 2G	Femto	Cells
+* Radio	Signal	Attenuation	System
+* Radio	Signal	Shield	Box
+* OpenIMS	Core
+* OpenIMS	Clients	Linux
+* OpenIMS	Clients	Android
+* OpenEPC	as	a	Service
+* OpenEPC	Clients	Linux
+* OpenEPC	Clients	Android
+* Monitoring	Systems
 
+See :ref:`resourcedetails-label` for more details. 
 

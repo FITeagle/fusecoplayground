@@ -1,3 +1,5 @@
+.. _resourcedetails-label:
+
 FUSECO Playground Resource Description
 ======================================
 
