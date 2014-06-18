@@ -1,18 +1,20 @@
+```````````````````````````````
 Getting an Account
-==================
+```````````````````````````````
 
 In order to access the FUSECO Playground, a user has currently main two possibilities.
 
+.. contents:: Table of Contents
+
 Access via plain SSH 
---------------------
+====================
 
 This is a manual process and a mail should be sent to `info@fuseco-playground.org <mailto:info@fuseco-playground.org>`_.
 
 Access via SFA
---------------
+==============
 
-A user needs either a X.509 certificate from a trusted federation, such as Fed4FIRE, or from the FUSECO Playground:
-
+A user needs either a X.509 certificate from a trusted federation, such as Fed4FIRE, or from the FUSECO Playground.
 To get credentials from the FUSECO Playground:
 
 #. Visit https://fuseco.fokus.fraunhofer.de/#registration

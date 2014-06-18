@@ -1,10 +1,13 @@
 .. _resourcedetails-label:
 
+```````````````````````````````
 FUSECO Playground Resource Description
-======================================
+```````````````````````````````
+
+.. contents:: Table of Contents
 
 Femto Cells
------------
+===========
 	
 The Base Stations we use are commercial off-the-shelf elements. Usually they support basic functionality.
 
@@ -76,7 +79,7 @@ HW: Cisco Aironet 3602e
 
 
 Radio	Signal Attenuation	System
---------------------------------
+==================================
 
 Frequency range 700MHz – 3GHz; 
 Configuration 6x1; 
@@ -88,7 +91,7 @@ This allows to simulate users' mobility inside the network range influencing qua
 
 
 Radio	Signal Shield	Box
------------------------
+===========================
 
 >80dB shielding; 
 USB 2.0 connector; 
@@ -97,7 +100,7 @@ Antenna Coupler with frequency range 700MHz – 2.7GHz
 
 
 FUSECO Clients
---------------
+==============
 
 Supporting multiple operating systems as well as connectivity to different radio access technologies.
 
@@ -119,17 +122,17 @@ TBD
 
 
 OpenIMS Core
-------------
+============
 
 TBD
 
 OpenEPC as a Service
---------------------
+====================
 
 TBD
 
 FUSECO Cloud Testbed
---------------------
+====================
 
 Is a cloud testbed based on OpenStack.
 

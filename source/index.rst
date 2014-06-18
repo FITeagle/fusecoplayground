@@ -1,7 +1,7 @@
 Welcome to FUSECO Playground's documentation!
 =============================================
 
-This documentation describes how the FUSECO Playground can be accessed through its
+This documentation describes how the `FUSECO Playground <http://www.fuseco-playground.org>`_ can be accessed through its
 different interfaces.
 The focus lies on the users, not on technologies.
 Therefore, the documentation should allow users first to be able to access resources the most simple way (e.g. via SSH).
@@ -15,12 +15,11 @@ Then, different other access technologies are being described (such as
 
    fusecofacility
    resourcedetails
-   account
-   urnsrspecs
    accessingnodes
-   tipsandtricks
-   storage
-   omfandoml
-   tutorials
+..   account
+..   tipsandtricks
+..   storage
+..   omfandoml
+..   tutorials
 ..   todo
 
