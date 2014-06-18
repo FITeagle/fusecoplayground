@@ -8,16 +8,16 @@ First, you'll see a login field and we assume that you don't have any credential
 Configuring jFed
 ----------------
 
-  #. Choose in Default Login type "Load from file" and load the previously created "mycredentials.pem".
-  #. Type in your private key password.
-  #. Choose "Edit Testbed Info.." -> "Add New by scanning AM URL..." and type in the following: (URL: https://fuseco.fokus.fraunhofer.de/api/sfa/am/v3 ; URN: urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm) 
+  1. Choose in Default Login type "Load from file" and load the previously created "mycredentials.pem".
+  2. Type in your private key password.
+  3. Choose "Edit Testbed Info.." -> "Add New by scanning AM URL..." and type in the following: (URL: https://fuseco.fokus.fraunhofer.de/api/sfa/am/v3 ; URN: urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm) 
 
   .. figure:: ../images/jfed_config_fuseco_am.png
      :width: 40%
 
-  #. Choose Scan and afterwards "Open scan result as new Authority".
-  #. Close the testbeds info window again and click on "Login".
-  #. Get Credentials: 
+  4. Choose Scan and afterwards "Open scan result as new Authority".
+  5. Close the testbeds info window again and click on "Login".
+  6. Get Credentials: 
 
 .. todo:: credentials
 
