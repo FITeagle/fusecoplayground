@@ -118,7 +118,21 @@ For development on mobile devices, we offer the myMONSTER Rich Communication Sui
 OpenEPC Client
 ^^^^^^^^^^^^^^^
 
-TBD
+Ability to run and operate the Mobility Manager which: 
+
+* handles the attachments/detachments/handovers for the Client machine.
+
+* measures the signal strengths for 2G,3G,4G,WiFi connections in case physical equipments are used 
+
+* able to communicate on S14 interface with the OpenEPC ANDSF entity
+
+The user is able to reconfigure the Mobility Manager: 
+
+* configure the list of access networks that the user wants to work with (select from the available ones provided by OpenEPC) 
+
+* configure the signal thresholds which determine if a handover is performed or not when an ANDSF policy has to be analyzed 
+
+* whether or not the ANDSF policy gets executed (enabling/disabling network control over the handovers) The user is able to use and configure MONSTER client.
 
 
 OpenIMS Core
@@ -129,7 +143,10 @@ TBD
 OpenEPC as a Service
 ====================
 
-TBD
+The FUSECO Playground offers access to an OpenEPC Rel. 5 setup as a Service. 
+
+`OpenEPC <http://www.openepc.net/index.html>`_ is a prototype implementation of the 3GPP Evolved Packet Core (EPC). It enables academia and industry researchers and engineers around the world to obtain a practical look and feel of the capabilities of the Evolved Packet Core. 
+OpenEPC Rel. 5, the current version available, includes all the components of the 3GPP architecture including the interfaces with various access technologies and service platforms.
 
 FUSECO Cloud Testbed
 ====================
