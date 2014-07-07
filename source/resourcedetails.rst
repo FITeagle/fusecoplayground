@@ -14,61 +14,44 @@ The Base Stations we use are commercial off-the-shelf elements. Usually they sup
 ip.access nanoBTS (DCS 1800)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Frequency range 1710-1785MHz , 1805-1880MHz , Maximum o/p power +23dBm, +13dBm (8PSK)
-supports the ip.access "A-bis over IP Interface"
-supports "typical" GSM BTS operations such as
-measurement pre-processing
-handover
-cell broadcast
-transmission of system information
-transmission and reception of "Full rate" or "Enhanced Full rate" speech traffic
-supports full rate and half rate Advanced Multi-Rate speech codec (AMR) on 165 with SR3 and higher software
-transmission and reception of circuit switched data;
-A5/1, A5/2 or A5/3, or "no encryption" algorithms over the air interface
-interworks with the ip.access nanoBSC product
-stores non volatile parameters in EEPROM
-Supports handover to UMTS cell
+Each nanoBTS is a single TRX which can support up to 14 simultaneous voice calls using dynamic AMR with half-rate. 
+For high traffic locations, where even greater capacity is needed, up to 4 nanoBTS can used to create a 2, 3 or 4 TRX cell.
+The nanoBTS picocell offers:
 
+* Controllable output power up to 23dBm giving an indoor range up to 200m
+
+* Simple deployment with a single Ethernet connection for power, traffic and signalling
+
+* GPRS and EDGE data essential Blackberry® and enterprise applications
+
+* Models for the 850, 900, 1800 and 1900MHz bands
+
+* Network Listen™ to optimize handover configuration
+
+For futher details see `ip.access <http://www.ipaccess.com/en/public-access>`_
 
 ip.access Nano3G E16 (model 239A) UMTS IMT 2100
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Support for 8 or 16 users
-Support for 3GPP R99 and HSDPA
-Support for HSUPA
-250mW transmitter power
-Hard handover: inter-frequency, intra-frequency and inter-RAT
-IP Backhaul
-High stability internal master oscillator
-NTP for time/date, OCXO for frequency stability
-Configurable to operate with or without IPsec
-Full Compliance for 3GPP Local Area Base Station specifications
-Total transmit power:
+The full +24 dBm (250mW) output power gives the E-class picocells the range to cover medium and large office buildings, 
+and for the largest deployments the E-class can connect directly into an active DAS system. 
+The flexibility is further enhanced by the high precision oscillator, giving fast start up in areas where no macro network can penetrate.
 
-+24dBm (250mw) Bands 1, 2, 4
-+13dBm (20mw) Band 5
-Receive sensitivity typically -115dBm
-Absolute frequency stability of better than +/-100ppb per annum under normal operating conditions
-Operational range of 200m for 12.2kbps CS voice calls (assumes an unobstructed path and ITU Pedestrian A propagation conditions)
-Uu Encryption and Integrity Protection F8 and F9
+Features:
+
+* Up to 16 simultaneous active users - (each with concurrent voice and high-speed data sessions) 
+
+* +24 dBm (250mW) output power
+
+* Available for Bands 1, 2/5 and 4.
+
+For futher details see `ip.access <http://www.ipaccess.com/en/public-access>`_
 
 
 ip.access LTE AP (model 254f )  2.6 GHz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-3GPP Compliance Compliant to 3GPP Rel 8.9.0
-Number of RF Carriers Single Carrier
-3GPP Band Support Dual Band 1/13, 4/13, 2/5 or 7/13.
-Bandwidth 10Mhz
-MIMO 2x2 MIMO-Single User Downlink only
-RF Average Output Power 2 x 10dBm
-Modulation/Coding? 16QAM U/L and D/L
-Max Data Rate Throughput 13Mbps
-Simultaneous # Active Users 4
-Simultaneous # Idle Users 64
-Network Interfaces S1 over IP
-Electrical Supply 12V @ 5.5A from external power brick
-
+For futher details see `ip.access <http://www.ipaccess.com/en/public-access>`_
 
 WiFi APs
 --------
@@ -118,18 +101,71 @@ For development on mobile devices, we offer the myMONSTER Rich Communication Sui
 OpenEPC Client
 ^^^^^^^^^^^^^^^
 
-TBD
+Ability to run and operate the Mobility Manager which: 
 
+* handles the attachments/detachments/handovers for the Client machine.
+
+* measures the signal strengths for 2G,3G,4G,WiFi connections in case physical equipments are used 
+
+* able to communicate on S14 interface with the OpenEPC ANDSF entity
+
+The user is able to reconfigure the Mobility Manager: 
+
+* configure the list of access networks that the user wants to work with (select from the available ones provided by OpenEPC) 
+
+* configure the signal thresholds which determine if a handover is performed or not when an ANDSF policy has to be analyzed 
+
+* whether or not the ANDSF policy gets executed (enabling/disabling network control over the handovers) The user is able to use and configure MONSTER client.
+
+**Mobility Manager GUI**
+
+How to start::
+
+	mte-user@epc-client-alice:/opt/OpenEPC/mm_gui$ ant run
+
+You have to enable X-Forwarding while connecting with SSH.
+
+<Screenshot>
+
+The Mobility Manager GUI will draw on the left side of its window a list of the available access networks, each accompanied by a picture according to the access network type. 
+Clicking on one access network will trigger a flip of their state. 
+The color of the icon to the left indicates the current state of an access network:
+
+* green: active and selected
+
+* yellow: connection or handover in progress
+
+* red: not connected
+
+* gray: disabled
+
+The operation is now being automated, such that on clicking on an access network, if not connected, a connection will be started. After obtaining an IP address, the MM will also trigger a selection of the new network. 
+If another network was active before clicking the current network, the previously selected access network will be disconnected after the hand-over. 
+When clicking on an active access network that network will be disconnected, resulting in a complete detachment.
+
+The "management" toggle button will switch the operation mode between manual-only hand-overs and automatic ANDSF Inter-System Handover Policies.
+
+By default, the Mobility Manager GUI assumes IPv4 operation, which can be toggled by the "use IPv6" toggle button.
+
+The "status logs" toggle will extend the MM GUI window so that logs will also be visible for debugging reasons.
+
+The bottom left "refresh" button is used to re-establish the connection to the MM service running in the background. This is typically necessary if the MM service is restarted, to re-establish the connection. 
+This button has also a "reset" functionality for the GUI because it brings it to the initial state (deactivates the management button if selected , IPv6 if selected, re-enables all the networks).
 
 OpenIMS Core
 ============
 
-TBD
+The `Open IMS Core <http://openimscore.sourceforge.net/>`_ is an Open Source implementation of IMS Call Session Control Functions (CSCFs) and a lightweight Home Subscriber Server (HSS), 
+which together form the core elements of all IMS/NGN architectures as specified today within 3GPP, 3GPP2, ETSI TISPAN and the PacketCable intiative. 
+The four components are all based upon Open Source software(e.g. the SIP Express Router (SER) or MySQL).
 
 OpenEPC as a Service
 ====================
 
-TBD
+The FUSECO Playground offers access to an OpenEPC Rel. 5 setup as a Service. 
+
+`OpenEPC <http://www.openepc.net/index.html>`_ is a prototype implementation of the 3GPP Evolved Packet Core (EPC). It enables academia and industry researchers and engineers around the world to obtain a practical look and feel of the capabilities of the Evolved Packet Core. 
+OpenEPC Rel. 5, the current version available, includes all the components of the 3GPP architecture including the interfaces with various access technologies and service platforms.
 
 FUSECO Cloud Testbed
 ====================
