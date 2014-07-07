@@ -125,7 +125,9 @@ How to start::
 
 You have to enable X-Forwarding while connecting with SSH.
 
-<Screenshot>
+image::  /assets/7261357/3496298/20e52df0-05e1-11e4-9c7c-180b7057e0dc.PNG
+
+https://cloud.githubusercontent.com/assets/7261357/3496298/20e52df0-05e1-11e4-9c7c-180b7057e0dc.PNG
 
 The Mobility Manager GUI will draw on the left side of its window a list of the available access networks, each accompanied by a picture according to the access network type. 
 Clicking on one access network will trigger a flip of their state. 
