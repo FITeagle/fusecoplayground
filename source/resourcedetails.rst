@@ -117,6 +117,40 @@ The user is able to reconfigure the Mobility Manager:
 
 * whether or not the ANDSF policy gets executed (enabling/disabling network control over the handovers) The user is able to use and configure MONSTER client.
 
+**Mobility Manager GUI**
+
+How to start::
+
+	mte-user@epc-client-alice:/opt/OpenEPC/mm_gui$ ant run
+
+You have to enable X-Forwarding while connecting with SSH.
+
+<Screenshot>
+
+The Mobility Manager GUI will draw on the left side of its window a list of the available access networks, each accompanied by a picture according to the access network type. 
+Clicking on one access network will trigger a flip of their state. 
+The color of the icon to the left indicates the current state of an access network:
+
+* green: active and selected
+
+* yellow: connection or handover in progress
+
+* red: not connected
+
+* gray: disabled
+
+The operation is now being automated, such that on clicking on an access network, if not connected, a connection will be started. After obtaining an IP address, the MM will also trigger a selection of the new network. 
+If another network was active before clicking the current network, the previously selected access network will be disconnected after the hand-over. 
+When clicking on an active access network that network will be disconnected, resulting in a complete detachment.
+
+The "management" toggle button will switch the operation mode between manual-only hand-overs and automatic ANDSF Inter-System Handover Policies.
+
+By default, the Mobility Manager GUI assumes IPv4 operation, which can be toggled by the "use IPv6" toggle button.
+
+The "status logs" toggle will extend the MM GUI window so that logs will also be visible for debugging reasons.
+
+The bottom left "refresh" button is used to re-establish the connection to the MM service running in the background. This is typically necessary if the MM service is restarted, to re-establish the connection. 
+This button has also a "reset" functionality for the GUI because it brings it to the initial state (deactivates the management button if selected , IPv6 if selected, re-enables all the networks).
 
 OpenIMS Core
 ============
