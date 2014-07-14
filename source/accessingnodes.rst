@@ -59,7 +59,7 @@ Select from test classes the "be.iminds.ilabt.jfed.lowlevel.api.test.TestAggrega
 Now you should configure the test environment. Click on "Test Arguments" to set additional test arguments. Here you should specify at least "fixed_rspec". This is needed first on allocate request and will be used also for further tests. Here is an example how it should look like::
 
   <rspec type="request" generated="2014-07-11T10:20:39Z" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd " xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3">
-    <node client_id="PC" component_manager_id="urn:publicid:IDN+wall2.ilabt.iminds.be+authority+cm" component_id="urn:publicid:IDN+localhost+node+fOpenStack" exclusive="true">
+    <node client_id="PC" component_manager_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm" component_id="urn:publicid:IDN+localhost+node+fOpenStack" exclusive="true">
       <sliver_type name="m1.tiny"><disk_image name="fed4fireNightlyTest"/>
       </sliver_type>
     </node>
