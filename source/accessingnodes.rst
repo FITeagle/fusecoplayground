@@ -47,7 +47,7 @@ Start jFed-experimenter-GUI.jar
 
 After jFed starts, you need to choose the path of your certificate and enter the password 
 
-  .. figure:: ../images/jFed_login.png
+  .. figure:: ../images/jfed_login.png
 
 Click on New to start a new experiment.
 
