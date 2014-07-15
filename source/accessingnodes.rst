@@ -41,9 +41,8 @@ Depending on the used client, you might first need to configure the according te
 Getting Access to a Node
 ========================
 
-Download jFed Experimenter GUI JAR file from http://jfed.iminds.be
-
-Start jFed-experimenter-GUI.jar
+In order to start jFed Experimenter, go to http://jfed.iminds.be 
+You can start the tool either by clicking on Quickstart jFed experimenter tool or by downloading and starting jFed Experimenter GUI JAR file
 
 After jFed starts, you need to choose the path of your certificate and enter the password 
 
