@@ -17,15 +17,15 @@ Software Installation
 =====================
 
 Conceptionally, it should be possible to request resources using any SFA compliant tool.
-One example is the `jFed Probe Tool <http://jfed.iminds.be>`_ (tested with release 1388) and we assume that you've
+One example is the `jFed Experimenter GUI <http://jfed.iminds.be>`_ (tested with release 1536) and we assume that you've
 installed the binary and started it for example via command line::
 
-   java -jar jFed-probe-GUI.jar
+   java -jar jFed-experimenter-GUI.jar
 
 Software Configuration
 ======================
 
-Depending on the used client, you first need to configure the according testbed endpoints:
+Depending on the used client, you might first need to configure the according testbed endpoints:
 
 * SFA Aggregate Manager v3
 
@@ -37,18 +37,65 @@ Depending on the used client, you first need to configure the according testbed 
   * URL: https://fuseco.fokus.fraunhofer.de/api/sfa/registry/v1
   * URN: urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm
   
-  
-  
-Automated Scenario Tests
+
+Getting Access to a Node
 ========================
 
-* Automated Testing GUI
+Download jFed Experimenter GUI JAR file from http://jfed.iminds.be
 
-The automated scenario tests can be executed using a testing GUI similar to `jFed Probe Tool <http://jfed.iminds.be>`_. Use the `jFed automated testing GUI <http://jfed.iminds.be>`_ (tested with release 1495) to see the capabilities of the testbed. Install the binary and start it via command line::
+Start jFed-experimenter-GUI.jar
+
+After jFed starts, you need to choose the path of your certificate and enter the password 
+
+  .. figure:: ../images/jFed_login.png
+
+Click on New to start a new experiment.
+
+  .. figure:: ../images/new_Experiment.png
+
+Click on RSpec Editor tab.
+
+  .. figure:: ../images/RSpec_Editor.png
+
+Copy the following RSpec:
+
+  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+  <rspec type="request" generated="2014-07-11T10:20:39Z" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd " xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3">
+    <node client_id="PC" component_manager_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm" component_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+node+fOpenStack" exclusive="true">
+      <sliver_type name="m1.tiny"><disk_image name="fed4fireNightlyTest"/>
+      </sliver_type>
+    </node>
+  </rspec>
+
+This code is used to describe the resources required for the experiment
+
+Paste it to RSpec editor
+
+  .. figure:: ../images/RSpec_Editor_withCode.png
+
+Click on Run to start an experiment
+
+Choose a slice name for the experiment, project name and the duration of the experiment. In this example the slice name is "test" and project name is "fgre". The duration of the experiment is 2 hours 
+
+ .. figure:: ../images/Slice_name.png
+
+Wait for access. It may take some time to start and initialise the resources. Click ok to complete
+
+ .. figure:: ../images/initialize.png
+
+After initialisation phase finishes, click on Topology viewer tab. You will see the colour of the requested resource is green. It means, the resource is ready for your experiment.
+
+Right click on the resource and choose establish SSH session. A new terminal will be opened. You can use it to configure your resources. 
+
+Click on Terminate after you finish your experiment to release the resources
+
+
+Testing the API
+===============
+
+The automated scenario tests can be executed using a testing GUI. Use the `jFed automated testing GUI <http://jfed.iminds.be>`_ (tested with release 1495) to see the capabilities of the testbed. Install the binary and start it via command line::
 
    java -jar jFed-automated-testing-GUI.jar
-
-* Using the `jFed automated testing GUI <http://jfed.iminds.be>`_
 
 After you start jFed testing GUI, select your certificate and type your password to login.
 
@@ -59,7 +106,7 @@ Select from test classes the "be.iminds.ilabt.jfed.lowlevel.api.test.TestAggrega
 Now you should configure the test environment. Click on "Test Arguments" to set additional test arguments. Here you should specify at least "fixed_rspec". This is needed first on allocate request and will be used also for further tests. Here is an example how it should look like::
 
   <rspec type="request" generated="2014-07-11T10:20:39Z" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd " xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3">
-    <node client_id="PC" component_manager_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm" component_id="urn:publicid:IDN+localhost+node+fOpenStack" exclusive="true">
+    <node client_id="PC" component_manager_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm" component_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+node+fOpenStack" exclusive="true">
       <sliver_type name="m1.tiny"><disk_image name="fed4fireNightlyTest"/>
       </sliver_type>
     </node>
@@ -92,8 +139,8 @@ The RSpec Request::
     xmlns="http://www.geni.net/resources/rspec/3">
     <node
       client_id="PC"
-      component_manager_id="urn:publicid:IDN+homer+authority+root"
-      component_id="urn:publicid:IDN+homer+node+fOpenStack"
+      component_manager_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm"
+      component_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+node+fOpenStack"
       exclusive="true">
       <sliver_type name="m1.tiny">
         <disk_image name="ubuntu-64-with-monitoringScripts"/>
