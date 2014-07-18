@@ -72,12 +72,25 @@ Wait for access. It may take some time to start and initialise the resources. Cl
 
  .. figure:: ../images/initialize.png
 
-After initialisation phase finishes, click on Topology viewer tab. You will see the colour of the requested resource is green. It means, the resource is ready for your experiment.
+After initialisation phase finishes, the requested node will become ready and the connectivity to the node will be tested.
+If everything is going well, all mentioned steps will be green as you can see from the folloiwng picture
 
-Right click on the resource and choose establish SSH session. A new terminal will be opened. You can use it to configure your resources. 
+ .. figure:: ../images/READY.png
+
+Press on Login button to log into the node
+Type yes to continue
+
+.. figure:: ../images/yes_to_login.png
+
+Now you logged into the node and it is ready for your configurations 
+
+.. figure:: ../images/logedin.png
 
 Click on Terminate after you finish your experiment to release the resources
 
+.. figure:: ../images/release_resources.png
+
+You see from the previous picture that all active nodes are deleted from our experiment. 
 
 Testing the API
 ===============
