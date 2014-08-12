@@ -131,7 +131,7 @@ Test Ubuntu Machine
 The RSpec Request::
 
   <rspec type="request" generated="2014-07-11T10:20:39Z" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd " xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3">
-    <node client_id="PC" component_manager_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm" component_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+node+fOpenStack" exclusive="true">
+    <node client_id="PC" component_manager_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm" component_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+node+fOpenStack" exclusive="false">
       <sliver_type name="m1.tiny"><disk_image name="fed4fireNightlyTest"/>
       </sliver_type>
     </node>
