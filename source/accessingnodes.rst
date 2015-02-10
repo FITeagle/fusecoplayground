@@ -123,13 +123,12 @@ Resource Descriptions (RSpecs)
 ==============================
 
 Depending on the result of the listResources call, it is possible to provision different resources.
-This documentation gives you simple examples:
+This documentation gives you two simple examples:
 
 Test Ubuntu Machine
 ------------------------
 
-The RSpec Request::
-
+  <?xml version="1.0"?>
   <rspec type="request" generated="2014-07-11T10:20:39Z" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd " xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3">
     <node client_id="PC" component_manager_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm" component_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+node+fOpenStack" exclusive="false">
       <sliver_type name="m1.tiny"><disk_image name="fed4fireNightlyTest"/>
@@ -137,3 +136,28 @@ The RSpec Request::
     </node>
   </rspec>
 
+
+OpenEPC Client and Measurement Server
+------------------------
+
+  <?xml version="1.0"?>
+  <rspec
+    xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.geni.net/resources/rspec/3"
+    type="request"
+    generated="2014-06-12T14:20:39Z"
+    xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd">
+    <node client_id="epc_client"
+          component_manager_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm"
+          component_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+node+epc_client"
+          exclusive="false">
+      <sliver_type name="raw-pc"/>
+    </node>
+    <node client_id="epc_measurement"
+          component_manager_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+cm"
+          component_id="urn:publicid:IDN+fuseco.fokus.fraunhofer.de+node+epc_measurement_server"
+          exclusive="false">
+      <sliver_type name="raw-pc"/>
+    </node>
+  </rspec>
