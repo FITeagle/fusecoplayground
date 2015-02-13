@@ -127,6 +127,7 @@ This documentation gives you two simple examples:
 
 Test Ubuntu Machine
 ------------------------
+Request RSpec::
 
   <?xml version="1.0"?>
   <rspec type="request" generated="2014-07-11T10:20:39Z" xsi:schemaLocation="http://www.geni.net/resources/rspec/3 http://www.geni.net/resources/rspec/3/request.xsd " xmlns:client="http://www.protogeni.net/resources/rspec/ext/client/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.geni.net/resources/rspec/3">
@@ -139,6 +140,7 @@ Test Ubuntu Machine
 
 OpenEPC Client and Measurement Server
 ------------------------
+Request RSpec::
 
   <?xml version="1.0"?>
   <rspec
